@@ -24,14 +24,9 @@ def check_date(full_date: str) -> bool:
         return False
     return True
 
-if __name__ == "__main__":
-    import sys
+# Тестирование
+date1 = '29.02.2020'
+date2 = '31.04.2021'
 
-    if len(sys.argv) != 2:
-        print("Usage: python date_validator.py <date>")
-    else:
-        date_to_check = sys.argv[1]
-        if check_date(date_to_check):
-            print(f"The date {date_to_check} is valid.")
-        else:
-            print(f"The date {date_to_check} is invalid.")
+print(check_date(date1))
+print(check_date(date2))
